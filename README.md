@@ -9,7 +9,7 @@ after downloading the project you need to follow ...
     <li>npm i</li>
     <li>json-server --watch ./data/db.json --port 3001</li>
     <li>npm start</li>
-<ol>
+</ol>
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
