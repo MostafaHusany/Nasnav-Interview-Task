@@ -1,0 +1,72 @@
+@import '../../layout/baseColor';
+
+.cart {
+
+    position: fixed;
+
+    top: 0;
+    right: -100vw;
+    width: 35vw;
+    height: 100vh;
+    transition: right 1s;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    .listed-product {
+        width: 100%;
+        background: #fff;
+
+        position: absolute;
+        right: 0;
+        height: 100%;
+        padding: 10px 20px;
+
+        .close-card {
+            background: none;
+            border: none;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .products-in-cart {
+            width: 100%;
+            height: 75%;
+            overflow-y: scroll;
+
+            .selected-product {
+                
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid rgba(100, 100, 100, 0.2);
+                padding: 10px;
+
+                img {
+                    width: 100%
+                }
+
+                .product-details {
+                    p {
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 1.1;
+                        padding: 0;   
+                    }
+                }
+
+                .remove-btn {
+                    background-color: #FFF200;
+                    border: none;
+                    outline: none;
+                    padding: 5px 27px;
+                    border-radius: 13px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.show-cart {
+    right: -5px;
+}

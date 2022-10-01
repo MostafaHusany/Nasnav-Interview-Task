@@ -1,0 +1,47 @@
+{
+    "product" : {
+        "id" : 1,
+        "description" : "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "brand" : "./images/add-brand.svg",
+        "rating"  : "4.9 of 5",
+        "rated_users" : "22 Rates",
+        "category" : "Men",
+        "price" : 9999,
+
+        "main_image" : "/images/product1-1.png",
+        "images" : [
+            "/images/product/p6.png",
+            "/images/product/p1.png", "/images/product/p2.png", 
+            "/images/product/p3.png", "/images/product/p4.png" 
+        ]
+    },
+
+    "similarProducts" : [
+        {
+            "title" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "price": "9,999",
+            "main_img": "./images/sugested_products/Group575.png",
+            "brand_img" : "./images/add-brand.svg"
+        },
+    
+        {
+            "title" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "price": "9,999",
+            "main_img": "./images/sugested_products/Group583.png",
+            "brand_img" : "./images/add-brand.svg"
+        },
+    
+        {
+            "title" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "price": "9,999",
+            "main_img": "./images/sugested_products/Group589.png",
+            "brand_img" : "./images/add-brand.svg"
+        },
+    
+        {
+            "title" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "price": "9,999",
+            "main_img": "./images/sugested_products/Group597.png"
+        }
+    ]
+}

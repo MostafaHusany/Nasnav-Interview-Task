@@ -1,0 +1,54 @@
+@import '../../layout/baseColor';
+
+.card {
+    width: 268px;
+
+    .card-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .card-details {
+        margin: 12px 0;
+
+        .card-price {
+            color: $second-color;
+
+            font-size: 20px;
+            font-weight: 700;
+
+            span {
+                // margin-left: 2px;
+                font-size: 16px;
+            }
+        }
+
+        .card-brand {
+            text-align: right;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .card-rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        h5 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .rating {
+            text-align: center;
+            font-size: 20px;
+            color: #FFB900;
+        }
+    }
+}
