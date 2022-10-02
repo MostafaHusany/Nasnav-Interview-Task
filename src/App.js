@@ -158,11 +158,13 @@ function App() {
       target_product.total_price = product.quantity * product.price; 
       
       setCart(prevState => {
+        const products_id = [...prevState.products_id];
+
         return {
           products : {[target_product.id] : target_product, ...prevState.products},
-          products_id : [...prevState.products_id],
-          total : prevState.products_id.map(pr_id => parseFloat(cart.products[pr_id].total_price)).reduce((a, b) => a + b , 0),
-          count : prevState.products_id.map(pr_id => cart.products[pr_id].quantity).reduce((a, b) => a + b , 0)
+          products_id,
+          total : products_id.map(pr_id => cart.products[pr_id].total_price).reduce((a, b) => a + b , 0),
+          count : products_id.map(pr_id => cart.products[pr_id].quantity).reduce((a, b) => a + b , 0)
         }
       });
 
@@ -187,11 +189,13 @@ function App() {
   const removeProductFromCart = (target_product_id) => {
     
     setCart(prevState => {
+      const products_id = prevState.products_id.filter(product_id => product_id != target_product_id);
+
       return {
         products : {...prevState.products, target_product_id :  null},
-        products_id : prevState.products_id.filter(product_id => product_id != target_product_id),
-        total : prevState.products_id.map(pr_id => parseFloat(cart.products[pr_id].total_price)).reduce((a, b) => a + b , 0),
-        count : prevState.products_id.map(pr_id => cart.products[pr_id].quantity).reduce((a, b) => a + b , 0)
+        products_id,
+        total : products_id.map(pr_id => prevState.products[pr_id].total_price).reduce((a, b) => a + b , 0),
+        count : products_id.map(pr_id => prevState.products[pr_id].quantity).reduce((a, b) => a + b , 0)
       }
     });
 
